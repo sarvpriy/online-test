@@ -1,0 +1,15 @@
+{
+  "name": "online-test-series",
+  "version": "1.0.0",
+  "description": "test series in angular js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "lite-server"
+  },
+  "author": "sarvpriy and shahab ahmad faroqui",
+  "license": "ISC",
+  "dependencies": {
+    "lite-server": "^2.3.0"
+  }
+}
