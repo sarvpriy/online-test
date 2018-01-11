@@ -1,0 +1,60 @@
+body {
+	background-color: #e9e9e9;
+	font-family: 'Segoe UI', sans-serif;
+	padding: 10px 2px;
+    margin:auto;
+    background-image: url('/../img/wall.jpg');
+    align-content: center;
+}
+
+footer {
+	border-top: 1px solid #fff;
+	margin-top: 10px;
+	padding: 10px;
+	text-align: center;
+}
+
+
+#alltests {
+	border-right: 1px solid #fff;
+}
+
+#home {
+	align-items: center;
+	margin: auto;
+	width: 80%;
+}
+
+ul.paginate {
+	display: inline;
+	margin: 5px;
+	padding: 0px;
+}
+
+button.seen {
+	background-color: blue;
+}
+
+button.ans {
+	background-color: grren;
+}
+
+.textinput {
+	margin: 5px;
+}
+
+#newTestForm {
+	padding: 10px;
+	margin-top: 10px;
+}
+
+#loginForm {
+	padding: 5px;
+	margin: 5px;
+}
+
+
+#registerForm {
+	padding: 5px;
+	margin: 5px;
+}
