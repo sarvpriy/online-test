@@ -1,0 +1,41 @@
+
+<div id="questions">
+<div class="header">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="col-md-6">
+            	<h3>Welcome {{ user }}</h3>
+            </div>
+            <div>
+            	<h3> Test: {{ testName }}</h3>
+            </div>
+        </div>
+        <div class="col-md-4 header-right">
+        	minus marking {{ 1 / minusMarking }} <br/>
+        	Total Time {{ totalTime }} min<br/>
+			{{hcounter}}h : {{mincounter}}m : {{counter}}s
+        </div>
+    </div>
+    <hr />
+ </div>	
+	<h3> {{ que.question }}</h3>
+	<p><input type="radio" name="" ng-model="checkedOpt" value="opt1" ng-change="changeOPt(1,que.id)">{{ que.opt1 }}</p>
+	<p><input type="radio" name="" ng-model="checkedOpt" value="opt2" ng-change="changeOPt(2,que.id)">{{ que.opt2 }}</p>
+	<p><input type="radio" name="" ng-model="checkedOpt" value="opt3" ng-change="changeOPt(3,que.id)">{{ que.opt3 }}</p>
+	<p><input type="radio" name="" ng-model="checkedOpt" value="opt4" ng-change="changeOPt(4,que.id)">{{ que.opt4 }}</p>
+	<hr />
+	<ul class="paginate" ng-repeat="que in ques track by $index">
+		<button class="btn btn-default" ng-click="goto(que.id)" >{{ $index + 1 }}</button>
+	</ul>
+	<hr />
+	<button class="btn btn-sm btn-default" ng-click="showResult()">Result</button><br/>
+	<div ng-model="result">
+		You have Scored: {{result}}
+	</div>
+<!-- 	<ol ng-repeat="que in ques track by $index">
+		<li><p>{{ que.question }}</p>
+		<p>{{ que.ans }}</p>
+		<p>{{ que.userAns }}</p>
+	</li>
+	</ol> -->
+</div>

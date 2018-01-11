@@ -1,0 +1,50 @@
+<div id="queForm">
+	<div class="header">
+    <div class="row">
+        <div class="col-md-8">
+            <h3>Welcome {{ user }}</h3>
+            <h4>Here Add as much Questions as You Want</h4>
+        </div>
+        <div class="col-md-4 header-right">
+            <!-- In actual application, you may wish to load the quiz List using angular service. -->
+            <button class="btn btn-sm btn-default" ng-click="logout()">Logout</button>
+        </div>
+    </div>
+	<hr />
+	<div class="panel" id="newTestForm">
+		<div class="panel-heading panel-default">
+			<h5>Add Question</h5>
+		</div>
+		<div class="panel-body">
+			<form class="form-horizontal">
+				<div class="form-group">
+					<label for="question">Question:</label>
+					<textarea class="form-control" type="textarea" rows="6" name="question" ng-model="question"></textarea>
+				</div>
+				<div class="form-group">
+					<label for="opt1">Option 1:</label>
+					<input class="form-control" type="text" name="opt1" ng-model="opt1">
+				</div>
+				<div class="form-group">
+					<label for="opt2">Option 2:</label>
+					<input class="form-control" type="text" name="opt2" ng-model="opt2">
+				</div>
+				<div class="form-group">
+					<label for="opt3">Option3:</label>
+					<input class="form-control" type="text" name="opt3" ng-model="opt3">
+				</div>
+				<div class="form-group">
+					<label for="opt4">Option 4:</label>
+					<input class="form-control" type="text" name="opt4" ng-model="opt4">
+				</div>
+				<div class="form-group">
+					<label for="answer">Answer:</label>
+					<input class="form-control" type="text" name="answer" ng-model="answer">
+				</div>
+				<div class="form-group">
+					<button class="btn btn-sm btn-success" ng-click="addNewQue()">Add</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

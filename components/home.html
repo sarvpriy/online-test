@@ -1,0 +1,74 @@
+<div class="header">
+    <div class="row">
+        <div class="col-md-8">
+            <h2>Welcome To Online Test Series Portal</h2>
+        </div>
+        <div class="col-md-4 header-right">
+            <!-- In actual application, you may wish to load the quiz List using angular service. -->
+        </div>
+    </div>
+	<hr />
+
+	<div id="home" class="">
+		<div class="">
+		<div class="panel col-md-12">
+		<div class="panel-heading panel-default">
+			
+			<button ng-click="goToLogin()">Login</button>
+			<button ng-click="goToRegister()">Register</button>
+		</div>
+		<div class="panel-body">
+			<div ng-show="myValue1" class="ng-hide">
+				<div id="loginForm">
+					<form class="form-horizontal">
+						<div class="form-group">
+						<label for="username">Username:</label>
+						<input class="form-control" name="username" type="text" ng-model="username" placeholder="username">
+							
+						</div>
+						<div class="form-group">
+						<label for="password">Password:</label>
+						<input class="form-control" name="password" type="password" ng-model="password" placeholder="password">
+							
+						</div>
+						<div class="form-group">
+					 	<button class="btn btn-sm btn-default" ng-click="login()">Login</button>
+							
+						</div>
+					</form>
+				</div>
+			</div>
+			<div ng-show="myValue2" class="ng-hide">
+				<div id="registerForm">
+					<form class="form-horizontal">
+						<div class="form-group">
+							<label for="username">Username:</label>
+							<input class="form-control" type="text" ng-model="username" placeholder="username">
+						</div>
+						<div class="form-group">
+							<label for="email">Email:</label>
+							<input class="form-control" name="email" type="email" ng-model="email" placeholder="email">
+						</div>
+						<div class="form-group">
+							<label for="phone">Phone:</label>
+							<input class="form-control" type="number" name="phone" ng-model="phone" placeholder="phone">
+						</div>
+						<div class="form-group">
+							<label for="username">Password:</label>
+							<input class="form-control" name="password" type="password" ng-model="password" placeholder="password">
+						</div>
+						<div class="form-group">
+							<label for="username">Re-enter Password:</label>
+							<input class="form-control" name="re-password" type="password" ng-model="rePassword" placeholder="re-password">
+						</div>
+						<div class="form-group">
+							<button class="btn btn-sm btn-success" ng-click="register()">Register</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+			
+		</div>
+	</div>
+	</div>
